@@ -30,7 +30,7 @@ jobs:
         uses: docker/build-push-action@v3
         with:
           push: true
-          tags: fastapi-sandbox/app:latest
+          tags: ${{ secrets.DOCKERHUB_USERNAME }}/app:latest
 
 
   
